@@ -1,16 +1,53 @@
-<!doctype html>
-<html amp>
-<head>
-<meta charset="utf-8" />
-<title>AMP Test Page</title>
-<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
-<link rel="canonical" href="https://graspaevinci.github.io/amp.html" />
-<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
-<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
-<noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-<script async src="https://cdn.ampproject.org/v0.js"></script>
-</head>
-<body>
-  <amp-ad data-slot="/124141061/fbsbx-55-mrect" height="250" json="&#123;&quot;useSameDomainRenderingUntilDeprecated&quot;:1&#125;" type="doubleclick" width="300" ></amp-ad>
-</body>
+
+<html>
+ <body>
+
+  <script>
+function AppendRealPullPixel() {
+  pixelHTML = '<img width=1 height=1 src="https://www.facebook.com/audiencenetwork/idsync?partner=343816786389271&callback=https%3A//cm.g.doubleclick.net/pixel%3Fgoogle_nid%3Dfacebook_nb%26google_cver=1%26google_push=AHNF13JIU1dnZffqyxi-vOe4ju5O4R111d-VPEhkAyQljA%26google_hm%3D%24BUYERUID" />';
+  document.getElementById('pixel').innerHTML = pixelHTML;
+}
+function AppendStaticHMPixel() {
+  pixelHTML = '<img width=1 height=1 src="https://cm.g.doubleclick.net/pixel?google_nid=facebook_nb&google_cver=1&google_push=AHNF13JIU1dnZffqyxi-vOe4ju5O4R111d-VPEhkAyQljA&google_hm=GGIBwyBggRV5SMwoitQHcQgCClwDGHU9hyqyNj2Gdi6xLciug5aUNvIEJXectyqz85-a-oRhQyQge87T4Lri2_KNr3TEbzXFlPxPqJCCZRyOTUKqycZRCFB85pP_QRqL7cXMaxhEAQh8lyGAMa5zwINbbHqtXo2z7xIncXqCEPo3FYgWccIRd_Gg-nBxE6QNKDUvNm4lhExQ2xrX90Ub4RT7i0OOTHNE0KAA" />';
+  document.getElementById('pixel').innerHTML = pixelHTML;
+}
+  </script>
+
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+
+<script>
+googletag.cmd.push(function() {
+	googletag.defineSlot('/217152209/Jedi_Whale/jedi_blue_facebook_web/jedi_blue_facebook_web', [300, 250], 'div-gpt-ad-1541010951098-0')
+			.addService(googletag.pubads())
+			.setTargeting("fb_placement_id", "343816786389271_355745265196423");
+	// googletag.pubads().enableSingleRequest();
+	googletag.pubads().set("page_url", "343816786389271_351004222337194-taha.com");
+	googletag.pubads().setLocation("94043, US");
+	googletag.enableServices();
+});
+</script>
+
+<!-- /217152209/Jedi_Whale/jedi_blue_facebook_web/jedi_blue_facebook_web -->
+<div id='div-gpt-ad-1541010951098-0' style='height:250px; width:300px;'>
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1541010951098-0'); });
+</script>
+</div>
+
+<br />
+<button type="button" onClick="AppendRealPullPixel();">Append Real Pull Pixel</button>
+<br />
+<button type="button" onClick="AppendStaticHMPixel();">Append Static Hosted Match Pixel</button>
+<br />
+<button type="button" onClick="googletag.pubads().refresh();">Reload ads</button>
+<br />                                                                                                                 
+
+<div id='pixel'></div>
+
+ </body>
 </html>
+
