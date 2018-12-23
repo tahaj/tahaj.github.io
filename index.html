@@ -1,0 +1,51 @@
+<html>
+ <body>
+
+  <script>
+function AppendRealPullPixel() {
+  pixelHTML = '<img width=1 height=1 src="https://www.facebook.com/audiencenetwork/idsync?partner=343816786389271&callback=https%3A//cm.g.doubleclick.net/pixel%3Fgoogle_nid%3Dfacebook_nb%26google_cver=1%26google_push=AHNF13JIU1dnZffqyxi-vOe4ju5O4R111d-VPEhkAyQljA%26google_hm%3D%24BUYERUID" />';
+  document.getElementById('pixel').innerHTML = pixelHTML;
+}
+function AppendStaticHMPixel() {
+  pixelHTML = '<img width=1 height=1 src="https://cm.g.doubleclick.net/pixel?google_nid=facebook_nb&google_cver=1&google_push=AHNF13JIU1dnZffqyxi-vOe4ju5O4R111d-VPEhkAyQljA&google_hm=GGIBwyBggRV5SMwoitQHcQgCClwDGHU9hyqyNj2Gdi6xLciug5aUNvIEJXectyqz85-a-oRhQyQge87T4Lri2_KNr3TEbzXFlPxPqJCCZRyOTUKqycZRCFB85pP_QRqL7cXMaxhEAQh8lyGAMa5zwINbbHqtXo2z7xIncXqCEPo3FYgWccIRd_Gg-nBxE6QNKDUvNm4lhExQ2xrX90Ub4RT7i0OOTHNE0KAA" />';
+  document.getElementById('pixel').innerHTML = pixelHTML;
+}
+  </script>
+
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+
+<script>
+googletag.cmd.push(function() {
+        googletag.defineSlot('/217152209/Jedi_Whale/jedi_blue_facebook_web/jedi_blue_facebook_web', [300, 250], 'div-gpt-ad-1541010951098-0')
+                        .addService(googletag.pubads())
+                        .setTargeting("fb_placement_id", "343816786389271_355745265196423");
+        // googletag.pubads().enableSingleRequest();
+        googletag.pubads().set("page_url", "343816786389271_351004222337194.com");
+        googletag.pubads().setLocation("94043, US");
+        googletag.enableServices();
+});
+</script>
+
+<!-- /217152209/Jedi_Whale/jedi_blue_facebook_web/jedi_blue_facebook_web -->
+<div id='div-gpt-ad-1541010951098-0' style='height:250px; width:300px;'>
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1541010951098-0'); });
+</script>
+</div>
+
+<br />
+<button type="button" onClick="AppendRealPullPixel();">Append Real Pull Pixel</button>
+<br />
+<button type="button" onClick="AppendStaticHMPixel();">Append Static Hosted Match Pixel</button>
+<br />
+<button type="button" onClick="googletag.pubads().refresh();">Reload ads</button>
+<br />
+
+<div id='pixel'></div>
+
+ </body>
+</html>
