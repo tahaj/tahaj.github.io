@@ -1,0 +1,52 @@
+<html>
+<title> Moon Test Page </title>
+ <body>
+  <script>
+function syncCookie() {
+  pixelHTML = '<img width=1 height=1 src="https://www.facebook.com/audiencenetwork/idsync?partner=343816786389271&callback=https%3A//cm.g.doubleclick.net/pixel%3Fgoogle_nid%3Dfacebook_nb%26google_cver=1%26google_push=AHNF13JIU1dnZffqyxi-vOe4ju5O4R111d-VPEhkAyQljA%26google_hm%3D%24BUYERUID" />';
+  document.getElementById('pixel').innerHTML = pixelHTML;
+}
+  </script>
+
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+
+<script>
+googletag.cmd.push(function() {
+        googletag.defineSlot('/217152209/Jedi_Whale/jedi_blue_facebook_web/jedi_blue_facebook_web', [300, 250], 'div-gpt-ad-1541010951098-0')
+                        .addService(googletag.pubads())
+                        .setTargeting("fb_placement_id", "343816786389271_355745265196423");
+        googletag.pubads().set("page_url", "343816786389271_351004222337194.com");
+        googletag.pubads().setLocation("94043, US");
+        googletag.enableServices();
+});
+</script>
+
+<h3>Steps to render audience network ad through Moon</h3>
+<p>
+<ol>
+<li>Make sure you are on a US VPN (We are only targeting US users currently). <a href="https://whatismyipaddress.com/" target="blank">Check your ip location</a></li>
+<li>Open this page preferably in an incognito window</li>
+<li>Make sure you are logged in to <a href="https://www.facebook.com" target="blank">facebook</a></li>
+<li>Open <a href="https://newyorktimes.com" target="_blank">New York Times</a> so that doubleclick cookie gets attached. (Do this a couple of times to be sure) </li>
+<li>Click on Reload Ads to get the ad Rendered</li>
+</ol>
+</p>
+</hr>
+<button type="button" onClick="googletag.pubads().refresh();">Reload ads</button>
+
+<!--Medium Rect -->
+<div id='div-gpt-ad-1541010951098-0' style='height:250px; width:300px;'>
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1541010951098-0'); });
+</script>
+</div>
+
+
+<div id='pixel'></div>
+
+ </body>
+</html>
