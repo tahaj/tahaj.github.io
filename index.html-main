@@ -28,7 +28,6 @@ googletag.cmd.push(function() {
 <h3>Steps to render audience network ad through Moon</h3>
 <p>
 <ol>
-<li>Make sure you are on a US VPN (We are only targeting US users currently). <a href="https://whatismyipaddress.com/" target="blank">Check your ip location</a></li>
 <li>Open this page preferably in an incognito window</li>
 <li>Make sure you are logged in to <a href="https://www.facebook.com" target="blank">facebook</a></li>
 <li>Open <a href="https://newyorktimes.com" target="_blank">New York Times</a> so that doubleclick cookie gets attached. (Do this a couple of times to be sure) </li>
